@@ -1,3 +1,60 @@
 #navHeader{
     background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
 }
+
+body {
+    min-height:100%;
+    background: linear-gradient(black 0 0) calc(100%/2);
+    background-size:5px;
+    background-repeat:no-repeat;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+#present {
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
+}
+
+#past {
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
+}
+
+#future {
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
+}
+
+* { margin: 0, padding 0}
+
+#mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: none;
+    z-index: 10000;
+    background-repeat: repeat;
+}
+
+#popup
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 30%;
+    margin: auto auto; 
+    border: 1px solid black;
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10001;
+    display: none;
+    padding: 20px;
+    box-shadow: 10px 10px 5px #b3b3b3;
+}
