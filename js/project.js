@@ -21,3 +21,9 @@ function showPopup() {
     // show the popup
     $("#popup").show();
 }
+
+const myCarouselElement = document.querySelector('#myCarousel')
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+    interval: 5000,
+    wrap: true
+})

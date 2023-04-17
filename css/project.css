@@ -1,35 +1,33 @@
-#navHeader{
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body {
-    min-height:100%;
-    background: linear-gradient(black 0 0) calc(100%/2);
-    background-size:5px;
-    background-repeat:no-repeat;
-}
-
+  
 a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    text-decoration: inherit;
+}
+  
+.line {
+    min-height: 100%;
+    background: linear-gradient(black 0 0) calc(100%/2);
+    background-size: 5px;
+    background-repeat: no-repeat;
 }
 
-#present {
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
-}
-
-#past {
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
-}
-
+/* Navigation Header */
+#navHeader,
+#present,
+#past,
 #future {
     background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
 }
 
-* { margin: 0, padding 0}
-
-#mask{
-    position: absolute;
+/* Mask and Popup */
+#mask {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,40 +35,73 @@ a {
     background-color: #000;
     display: none;
     z-index: 10000;
-    background-repeat: repeat;
 }
 
-#popup
-{
-    position: absolute;
+#popup {
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
     height: 30%;
-    margin: auto auto; 
     border: 1px solid black;
     background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     z-index: 10001;
     display: none;
-    padding: 20px;
     box-shadow: 10px 10px 5px #b3b3b3;
 }
-/*Footer copyright*/
+ 
+/* Navigation Header */
+#navHeader,
+#present,
+#past,
+#future {
+  background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
+}
 
+/* Footer */
 footer {
     position: relative;
     height: 100px;
-    width: 100%;
     background-color: #333333;
+    width: 100%;
 }
-
+  
 p.copyright {
     position: absolute;
     width: 100%;
     color: #fff;
     text-align: center;
-    bottom:5%;
+    bottom: 5%;
+}
+
+/* Carousel */
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel {
+    margin: 0 auto;
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel-img {
+    width: 500px;
+    height: 500px;
+    height: auto;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+/* Image card */
+.img-size{
+    height: 125px;
+    width: 125px;
+    margin-left: 5%;
 }
