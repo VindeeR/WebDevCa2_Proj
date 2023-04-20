@@ -60,10 +60,40 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 })
 
 // make the form shake 
-
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  // code to submit form
+    event.preventDefault();
 });
+
+
+function displayTestimonials() {
+    const testimonials = [
+    {
+        name: "John Doe",
+        comment: "Great service! I received my medication on time and the staff was very helpful."
+    },
+    {
+        name: "Jane Smith",
+        comment: "I've been a customer for years and I always receive excellent service from this pharmacy."
+    },
+    {
+        name: "Bob Johnson",
+        comment: "I was pleasantly surprised by how fast my prescription was filled. Highly recommend!"
+    }
+    ];
+  
+    const testimonialsSection = document.getElementById("testimonials-section");
+    let testimonialHTML = "";
+  
+    testimonials.forEach(testimonial => {
+        testimonialHTML += `
+            <div class="testimonial">
+            <p class="comment">${testimonial.comment}</p>
+            <p class="name">${testimonial.name}</p>
+            </div>`;
+    });
+    testimonialsSection.innerHTML = testimonialHTML;
+}
+  
+displayTestimonials();

@@ -17,6 +17,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
         <!-- Website CSS style -->
         <link rel="stylesheet" href="../css/project.css">
@@ -26,10 +27,10 @@
     </head>
 
     <!-- Website body -->
-    <body>
+    <body class="discount">
         <div class="row">
             <div id="navHeader" class="responiveNav col-md-12 bg-image p-5 text-center shadow-1-strong text-white">
-                <h1 class="mb-3 h2">Pharmacy Nostra</h1>
+                <h1 class="mb-4 h2">Pharmacy Nostra</h1>
     
                 <p>
                     Where your well being pushes us to a better service.
@@ -57,12 +58,38 @@
                 </div>
             </div>
         </nav>
+
+		<!-- Main content of the page -->
+		<h1>Discounts and Promotions</h1>
+		<p>Welcome to our pharmacy store's discounts and promotions page! We offer a variety of discounts and promotions for our customers to take advantage of. Check out our current promotions below.</p>
+		<h2>Current Promotions</h2>
+		<ul>
+			<li>10% off your first purchase: Use the code WELCOME10 at checkout to receive 10% off your first purchase.</li>
+			<li>Free shipping on orders over $50.</li>
+			<li>Buy one, get one 50% off on select vitamins and supplements: Stock up on your favorite vitamins and supplements while saving money!</li>
+			<li>Senior Citizen Discount: Senior citizens receive a 15% discount on all purchases.</li>
+		</ul>
+
+		<!-- Wow factor -->
+		<div class="wow">
+			<img src="../img/star.png" alt="Star">
+			<p>Don't miss out on our limited-time offer!</p>
+			<button>Shop now</button>
+		</div>
+
+		<!-- Newsletter sign-up form -->
+		<p>Sign up for our newsletter to receive exclusive offers straight to your inbox.</p>
+		<form>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<button type="submit">Sign up</button>
+		</form>
         
         <!-- Footer -->
         <footer>
             <p class="copyright">© Erick /Mengzhao /Somtochukwu 2023</p>
             <!-- Website javaScript -->
-            <script src="../js/project.js"></script>
+            <script src="./js/project.js"></script>
         </footer>
-    </body>
-</html>
+	</body>
+</head>
