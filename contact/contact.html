@@ -22,7 +22,13 @@
         <link rel="stylesheet" href="../css/project.css">
     
         <title>Assessment</title>
-    
+		<style>
+		body {
+			background-image: url('pharmacy1.jpg');
+			background-size: cover;
+		}
+	</style>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4ae9c751-a8bc-47ff-9221-54b986e2a5c9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </head>
 
     <!-- Website body -->
@@ -58,22 +64,143 @@
             </div>
         </nav>
         
+		
+		
         <div class="container mt-5 mb-5">
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
-                    <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(Pharmacy%20Nostra)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="300px" height="300px" frameborder="0"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+                    <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(Pharmacy%20Nostra)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="450px" height="600px" frameborder="0"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
                 </div>
                 <div class="col">
-                    
+					<main>
+						<center><h1>Contact Us</h1>
+<p>We're always happy to hear from our customers! Whether you have a question, feedback, or just want to say hello, we're here for you.</p>
+<p>Our friendly and knowledgeable team is available to help you with anything you need, from finding the right product to answering your health-related questions.</p>
+<p>So don't be shy – drop us a line using the form below or give us a call. We look forward to hearing from you!</p>
+
+
+						<p>For any inquiries, please fill out the form below or contact us via email or phone.</p>
+						<form action="submit-form.php" method="POST">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required><br>
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required><br>
+							<label for="subject">Subject:</label>
+							<input type="text" id="subject" name="subject" required><br>
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required></textarea>
+							<input type="submit" value="Submit">
+						</form>
+						<p>Prefer to speak to someone directly? Give us a call at 555-1234 and one of our team members will be happy to assist you.</p>
+					</main>
+					
+					<style>
+    input:focus, textarea:focus {
+        animation: shake 0.5s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(-10px); }
+        40% { transform: translateX(10px); }
+        60% { transform: translateX(-10px); }
+        80% { transform: translateX(10px); }
+        100% { transform: translateX(0); }
+    }
+</style>
+
+
+	
+	<div class="contact-info">
+			<p><strong>Email:</strong> info@NCIpharmacyonline.com</p>
+			<p><strong>Phone:</strong>00696-6969-69</p>
+			<p><strong>Address:</strong>630 Collins Avenue, Dublin </p>
+		</div>  
                 </div>
             </div>
         </div>   
+		
+		<div id="testimonials-section">
+  <!-- Testimonials will be displayed here -->
+</div>
+<script>
+function displayTestimonials() {
+  const testimonials = [
+    {
+      name: "John Doe",
+      comment: "Great service! I received my medication on time and the staff was very helpful."
+    },
+    {
+      name: "Jane Smith",
+      comment: "I've been a customer for years and I always receive excellent service from this pharmacy."
+    },
+    {
+      name: "Bob Johnson",
+      comment: "I was pleasantly surprised by how fast my prescription was filled. Highly recommend!"
+    }
+  ];
 
+  const testimonialsSection = document.getElementById("testimonials-section");
+  let testimonialHTML = "";
+
+  testimonials.forEach(testimonial => {
+    testimonialHTML += `
+      <div class="testimonial">
+        <p class="comment">${testimonial.comment}</p>
+        <p class="name">${testimonial.name}</p>
+      </div>
+    `;
+  });
+
+  testimonialsSection.innerHTML = testimonialHTML;
+}
+
+displayTestimonials();
+</script>
+
+<br>
+		<div class="social-media-links">
+  <a href="https://www.facebook.com/yourpharmacy/" target="_blank">
+    <img src="facebook-icon.png" class="icon">
+	<style>
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.comment {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+</style>
+  </a>
+  <a href="https://twitter.com/yourpharmacy/" target="_blank">
+    <img src="twitter-icon.png" class="icon">
+  </a>
+  <a href="https://www.instagram.com/yourpharmacy/" target="_blank">
+    <img src="instagram-icon.png" class="icon">
+  </a>
+</div>    
         <!-- Footer -->
         <footer>
-            <p class="copyright">© Erick /Mengzhao /Somtochukwu 2023</p>
+
+
+	<p class="copyright">© Erick/Mengzhao/Somtochukwu 2023</p>
             <!-- Website javaScript -->
             <script src="./js/project.js"></script>
         </footer>
+		
     </body>
 </html>

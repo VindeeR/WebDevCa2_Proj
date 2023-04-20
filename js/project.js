@@ -58,3 +58,12 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
     interval: 5000,
     wrap: true
 })
+
+// make the form shake 
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  // code to submit form
+});
