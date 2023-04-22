@@ -23,55 +23,6 @@
         <link rel="stylesheet" href="../css/project.css">
     
         <title>Assessment</title>
-
-        <style>
-            /* Center the main content of the page */
-            .container {
-                max-width: 960px;
-                margin: 0 auto;
-            }
-            /* Style the item container */
-            .item-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            
-            /* Style the item card */
-            .item-card {
-                width: 30%;
-                margin-bottom: 2rem;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            }
-            
-            .item-card img {
-                width: 100%;
-                height: auto;
-                margin-bottom: 0.5rem;
-            }
-            
-            .item-card p {
-                margin: 0.5reml;
-                font-size: 1.2rem;
-                font-weight: bold;
-            }
-            
-            .item-card table {
-                width: 100%;
-                margin-bottom: 0.5rem;
-            }
-            
-            .item-card td:first-child {
-                font-weight: bold;
-            }
-            
-            .item-card td:last-child {
-                text-align: right;
-                font-weight: bold;
-                color: #c00;
-            }
-        </style>
-
     </head>
 
     <!-- Website body -->
@@ -85,34 +36,66 @@
                 </p>
             </div>
         </div>
-        
+
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./products.html">All</a></li>
-                            <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
-                            <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
-                        </ul>
-                    </li>
+                    <menu>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./products.html">All</a></li>
+                                <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
+                                <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
+                            </ul>
+                        </li>
+                    </menu>
                     <a class="nav-link" href="./discount.html">Discounts</a>
                     <a class="nav-link" href="../contact/contact.html" tabindex="-1">Contact us</a>
                 </div>
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p><img src="../img/beauty.jpg"></p>
-                    <p><h3>Best Sellers!</h3></p>
-                </div> 
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide carousel-inner" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div>
+                <div class="carousel-item active mb-4">
+                    <img src="../img/beauty1_carousel.jpg" class="carousel-img" alt="beauty1 carousel.jpg">                
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item mb-4">
+                    <img src="../img/beauty2_carousel.jpg" class="c=arousel-img" alt="beauty2 carousel.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item mb-4">
+                    <img src="../img/beauty3_carousel.jpg" class="carousel-img" alt="beauty3 carousel.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
                     <h2>
@@ -122,78 +105,78 @@
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="card h-100">
-                    <img src="../img/beauty1.png" class="card-img-top mt-3">
-                    <p>CLEARLY CLEAN CLEANSING BALM</p>
-                    <p>100ML</p>
+                    <img src="../img/beauty1.png" class="card-img-top mt-3" alt="beauty 1">
+                    <p class="text-center">HONEYMOON GLOW SERUM</p>
+                    <p class="text-center">30ML</p>
                     <table>
                       <tr>
                         <td>Price:</td>
-                        <td>€ 38,00</td>
+                        <td>€ 62,00</td>
                       </tr>
                     </table>
                     <a href="#" class="btn btn-primary">Buy now</a>
                 </div>
                 
                 <div class="card h-100">
-                    <img src="../img/beauty1.png" class="card-img-top mt-3">
-                    <p>CLEARLY CLEAN CLEANSING BALM</p>
-                    <p>100ML</p>
+                    <img src="../img/beauty2.png" class="card-img-top mt-3" alt="beauty 2">
+                    <p class="text-center">WHIPPED GREENS CLEANSER</p>
+                    <p class="text-center">150ML</p>
                     <table>
                         <tr>
                         <td>Price:</td>
-                        <td>€ 38,00</td>
+                        <td>€ 28,00</td>
                         </tr>
                     </table>
                     <a href="#" class="btn btn-primary">Buy now</a>
                 </div>
 
                 <div class="card h-100">
-                    <img src="../img/beauty1.png" class="card-img-top mt-3">
-                    <p>CLEARLY CLEAN CLEANSING BALM</p>
-                    <p>100ML</p>
+                    <img src="../img/beauty3.png" class="card-img-top mt-3" alt="beauty 3">
+                    <p class="text-center">SHEER GLOW FOUNDATION</p>
+                    <p class="text-center">30ML</p>
                     <table>
                         <tr>
                         <td>Price:</td>
-                        <td>€ 38,00</td>
+                        <td>€ 45,00</td>
                         </tr>
                     </table>
                     <a href="#" class="btn btn-primary">Buy now</a>
                 </div>
 
                 <div class="card h-100">
-                    <img src="../img/beauty1.png" class="card-img-top mt-3">
-                    <p>CLEARLY CLEAN CLEANSING BALM</p>
-                    <p>100ML</p>
+                    <img src="../img/beauty4.png" class="card-img-top mt-3" alt="beauty 4">
+                    <p class="text-center">AMBIENT LIGHTING POWDER</p>
+                    <p class="text-center">1G</p>
                     <table>
                       <tr>
                         <td>Price:</td>
-                        <td>€ 38,00</td>
+                        <td>€ 29,00</td>
                       </tr>
                     </table>
                     <a href="#" class="btn btn-primary">Buy now</a>
                 </div>
                 
                 <div class="card h-100">
-                    <img src="../img/beauty1.png" class="card-img-top mt-3">
-                    <p>CLEARLY CLEAN CLEANSING BALM</p>
-                    <p>100ML</p>
+                    <img src="../img/beauty5.png" class="card-img-top mt-3"  alt="beauty 5">
+                    <p class="text-center">WONDERGLOW FACE PRIMER</p>
+                    <p class="text-center">40ML</p>
                     <table>
                         <tr>
                         <td>Price:</td>
-                        <td>€ 38,00</td>
+                        <td>€ 49,00</td>
                         </tr>
                     </table>
                     <a href="#" class="btn btn-primary">Buy now</a>
                 </div>
     
                 <div class="card h-100">
-                    <img src="../img/beauty1.png" class="card-img-top mt-3">
-                    <p>CLEARLY CLEAN CLEANSING BALM</p>
-                    <p>100ML</p>
+                    <img src="../img/beauty6.png" class="card-img-top mt-3" alt="beauty 6">
+                    <p class="text-center">CC CRÈME SPF25</p>
+                    <p class="text-center">45ML</p>
                     <table>
                         <tr>
                         <td>Price:</td>
-                        <td>€ 38,00</td>
+                        <td>€ 42,50</td>
                         </tr>
                     </table>
                     <a href="#" class="btn btn-primary">Buy now</a>
