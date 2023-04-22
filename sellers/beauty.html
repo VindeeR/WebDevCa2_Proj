@@ -23,55 +23,6 @@
         <link rel="stylesheet" href="../css/project.css">
     
         <title>Assessment</title>
-
-        <style>
-            /* Center the main content of the page */
-            .container {
-                max-width: 960px;
-                margin: 0 auto;
-            }
-            /* Style the item container */
-            .item-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            
-            /* Style the item card */
-            .item-card {
-                width: 30%;
-                margin-bottom: 2rem;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            }
-            
-            .item-card img {
-                width: 100%;
-                height: auto;
-                margin-bottom: 0.5rem;
-            }
-            
-            .item-card p {
-                margin: 0.5reml;
-                font-size: 1.2rem;
-                font-weight: bold;
-            }
-            
-            .item-card table {
-                width: 100%;
-                margin-bottom: 0.5rem;
-            }
-            
-            .item-card td:first-child {
-                font-weight: bold;
-            }
-            
-            .item-card td:last-child {
-                text-align: right;
-                font-weight: bold;
-                color: #c00;
-            }
-        </style>
-
     </head>
 
     <!-- Website body -->
@@ -86,21 +37,23 @@
             </div>
         </div>
 
-         <!-- Navbar -->
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./products.html">All</a></li>
-                            <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
-                            <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
-                        </ul>
-                    </li>
+                    <menu>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./products.html">All</a></li>
+                                <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
+                                <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
+                            </ul>
+                        </li>
+                    </menu>
                     <a class="nav-link" href="./discount.html">Discounts</a>
                     <a class="nav-link" href="../contact/contact.html" tabindex="-1">Contact us</a>
                 </div>
@@ -116,17 +69,17 @@
             </div>
             <div>
                 <div class="carousel-item active mb-4">
-                    <img src="../img/beauty1 carousel.jpg" class="carousel-img" alt="../img/beauty1 carousel.jpg">                
+                    <img src="../img/beauty1_carousel.jpg" class="carousel-img" alt="beauty1 carousel.jpg">                
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item mb-4">
-                    <img src="../img/beauty2 carousel.jpg" class="carousel-img" alt="../img/beauty2 carousel.jpg">
+                    <img src="../img/beauty2_carousel.jpg" class="c=arousel-img" alt="beauty2 carousel.jpg">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item mb-4">
-                    <img src="../img/beauty3 carousel.jpg" class="carousel-img" alt="../img/beauty3 carousel.jpg">
+                    <img src="../img/beauty3_carousel.jpg" class="carousel-img" alt="beauty3 carousel.jpg">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
@@ -152,7 +105,7 @@
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="card h-100">
-                    <img src="../img/beauty1.png" class="card-img-top mt-3">
+                    <img src="../img/beauty1.png" class="card-img-top mt-3" alt="beauty 1">
                     <p class="text-center">HONEYMOON GLOW SERUM</p>
                     <p class="text-center">30ML</p>
                     <table>
@@ -165,7 +118,7 @@
                 </div>
                 
                 <div class="card h-100">
-                    <img src="../img/beauty2.png" class="card-img-top mt-3">
+                    <img src="../img/beauty2.png" class="card-img-top mt-3" alt="beauty 2">
                     <p class="text-center">WHIPPED GREENS CLEANSER</p>
                     <p class="text-center">150ML</p>
                     <table>
@@ -178,7 +131,7 @@
                 </div>
 
                 <div class="card h-100">
-                    <img src="../img/beauty3.png" class="card-img-top mt-3">
+                    <img src="../img/beauty3.png" class="card-img-top mt-3" alt="beauty 3">
                     <p class="text-center">SHEER GLOW FOUNDATION</p>
                     <p class="text-center">30ML</p>
                     <table>
@@ -191,7 +144,7 @@
                 </div>
 
                 <div class="card h-100">
-                    <img src="../img/beauty4.png" class="card-img-top mt-3">
+                    <img src="../img/beauty4.png" class="card-img-top mt-3" alt="beauty 4">
                     <p class="text-center">AMBIENT LIGHTING POWDER</p>
                     <p class="text-center">1G</p>
                     <table>
@@ -204,7 +157,7 @@
                 </div>
                 
                 <div class="card h-100">
-                    <img src="../img/beauty5.png" class="card-img-top mt-3">
+                    <img src="../img/beauty5.png" class="card-img-top mt-3"  alt="beauty 5">
                     <p class="text-center">WONDERGLOW FACE PRIMER</p>
                     <p class="text-center">40ML</p>
                     <table>
@@ -217,7 +170,7 @@
                 </div>
     
                 <div class="card h-100">
-                    <img src="../img/beauty6.png" class="card-img-top mt-3">
+                    <img src="../img/beauty6.png" class="card-img-top mt-3" alt="beauty 6">
                     <p class="text-center">CC CRÈME SPF25</p>
                     <p class="text-center">45ML</p>
                     <table>

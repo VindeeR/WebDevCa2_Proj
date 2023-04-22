@@ -5,7 +5,7 @@
 //           12/04/2023             //
 ///////////////////////////////////-->
 
-<!DOCTYPE HTML5>
+<!DOCTYPE html>
 <html lang="en"> <!-- HTML5 opening HTML tag with language. -->
     <!-- Website header -->
     <head>
@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="../css/project.css">
     
         <title>Assessment</title>
-		<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4ae9c751-a8bc-47ff-9221-54b986e2a5c9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+		<script>window.$crisp=[];window.CRISP_WEBSITE_ID="4ae9c751-a8bc-47ff-9221-54b986e2a5c9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     
     </head>
 
@@ -32,7 +32,6 @@
         <div class="row">
             <div id="navHeader" class="responiveNav col-md-12 bg-image p-5 text-center shadow-1-strong text-white">
                 <h1 class="mb-4 h2">Pharmacy Nostra</h1>
-    
                 <p>
                     Where your well being pushes us to a better service.
                 </p>
@@ -44,16 +43,18 @@
             <div class="container-fluid">
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./products.html">All</a></li>
-                            <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
-                            <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
-                        </ul>
-                    </li>
+                    <menu>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./products.html">All</a></li>
+                                <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
+                                <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
+                            </ul>
+                        </li>
+                    </menu>
                     <a class="nav-link" href="./discount.html">Discounts</a>
                     <a class="nav-link" href="../contact/contact.html" tabindex="-1">Contact us</a>
                 </div>
@@ -150,61 +151,53 @@
             <!-- social-media-links -->
             <div class="social-media-links">
                 <a href="https://www.facebook.com/yourpharmacy/" target="_blank">
-                    <img src="facebook-icon.png" class="icon">
-                    <style>
-                        .icon {
-                            width: 50px;
-                            height: 50px;
-                        }
-                    </style>
+                    <img src="facebook-icon.png" class="icon" alt="facebook">
                 </a>
                 <a href="https://twitter.com/yourpharmacy/" target="_blank">
-                    <img src="twitter-icon.png" class="icon">
+                    <img src="twitter-icon.png" class="icon" alt="twitter">
                 </a>
                 <a href="https://www.instagram.com/yourpharmacy/" target="_blank">
-                    <img src="instagram-icon.png" class="icon">
+                    <img src="instagram-icon.png" class="icon" alt="instagram">
                 </a>
             </div> 
         </div>
-
-		
-        <!-- Footer -->
-        <footer>
-            <p class="copyright">© Erick /Mengzhao /Somtochukwu 2023</p>
-            <!-- Website javaScript -->
-            <script src="./js/project.js"></script>
-        </footer>
 		
 		
 		<!-- javaScript for Countdown timer -->
 		<script>
-// Set the date and time of the discount expiry in milliseconds
-var expiryDate = new Date("2023-05-01T00:00:00Z").getTime();
-
-// Update the countdown timer every second
-var countdown = setInterval(function() {
-  // Get the current date and time in milliseconds
-  var now = new Date().getTime();
-  
-  // Calculate the time remaining in milliseconds
-  var remaining = expiryDate - now;
-  
-  // Calculate the days, hours, minutes, and seconds remaining
-  var days = Math.floor(remaining / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((remaining % (1000 * 60)) / 1000);
-  
-  // Display the countdown timer
-  document.getElementById("countdown").innerHTML = "Discount expires in " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds.";
-  
-  // If the countdown timer has expired, clear the interval and display a message
-  if (remaining < 0) {
-    clearInterval(countdown);
-    document.getElementById("countdown").innerHTML = "Sorry, this discount has expired.";
-  }
-}, 1000); // Repeat every second
-</script>
-
-	</body>
-</head>
+            // Set the date and time of the discount expiry in milliseconds
+            var expiryDate = new Date("2023-06-11T00:00:00Z").getTime();
+            
+            // Update the countdown timer every second
+            var countdown = setInterval(function() {
+            // Get the current date and time in milliseconds
+            var now = new Date().getTime();
+            
+            // Calculate the time remaining in milliseconds
+            var remaining = expiryDate - now;
+            
+            // Calculate the days, hours, minutes, and seconds remaining
+            var days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+            
+            // Display the countdown timer
+            document.getElementById("countdown").innerHTML = "Discount expires in " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds.";
+            
+            // If the countdown timer has expired, clear the interval and display a message
+            if (remaining < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "Sorry, this discount has expired.";
+            }
+        }, 1000); // Repeat every second
+        </script>
+        
+        <!-- Footer -->
+        <footer>
+            <p class="copyright">© Erick /Mengzhao /Somtochukwu 2023</p>
+            <!-- Website javaScript -->
+            <script src="../js/project.js"></script>
+        </footer>
+    </body>
+</html>
