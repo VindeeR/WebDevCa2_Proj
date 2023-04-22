@@ -137,7 +137,6 @@ input[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 input[type="submit"]:hover {
@@ -161,11 +160,9 @@ textarea {
     align-items: center;
     background-color: #04AA6D;
     color: white;
-    font-size: 36px;
     font-weight: bold;
-    padding: 50px;
-    margin: 50px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .wow img {
