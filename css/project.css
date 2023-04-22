@@ -206,10 +206,3 @@ input:focus, textarea:focus {
 .name {
     font-weight: bold;
 }
-
-/* Contact page */
-
-body.contact{
-    background-image: url('../img/pharmacy1.jpg');
-    background-size: cover;
-}
