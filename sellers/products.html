@@ -24,6 +24,46 @@
     
         <title>Assessment</title>
 
+        <style>
+            section {
+			margin-bottom: 40px;
+		}
+		
+		h2 {
+			margin-bottom: 20px;
+		}
+		
+		p {
+			margin-bottom: 10px;
+		}
+		
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+        #beauty-products li,
+    #drug-products li {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #beauty-products li:last-child,
+    #drug-products li:last-child {
+        border-bottom: none;
+    }
+
+    #beauty-products li:hover,
+    #drug-products li:hover {
+        background-color: #f7f7f7;
+    }
+		
+        </style>
+
     </head>
 
     <!-- Website body -->
@@ -59,13 +99,26 @@
             </div>
         </nav>
     
-        <div>
-            <h1>Products We Have</h1>
-            <p>
-                Our Pharmacy is A well-known Pharmacy started in dublin ireland,1993.
-                We started to sell medicines, but since it's getting more popular and one of the founder, Meng, became 
-                a model, he started selling beauty produes in the Pharmacy as well~
-            </p>
+        <section id="beauty-products">
+			<h2>Beauty Products</h2>
+			<p>Explore our selection of beauty products below:</p>
+			<ul>
+				<li>Product 1</li>
+				<li>Product 2</li>
+				<li>Product 3</li>
+				<!-- Add more products here as needed -->
+			</ul>
+		</section>
+		<section id="drug-products">
+			<h2>Drug Products</h2>
+			<p>Explore our selection of drug products below:</p>
+			<ul>
+				<li>Product 1</li>
+				<li>Product 2</li>
+				<li>Product 3</li>
+				<!-- Add more products here as needed -->
+			</ul>
+		</section>
         </div>
 
         <!-- Footer -->

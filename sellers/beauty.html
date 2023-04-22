@@ -24,6 +24,54 @@
     
         <title>Assessment</title>
 
+        <style>
+            /* Center the main content of the page */
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            /* Style the item container */
+            .item-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            /* Style the item card */
+            .item-card {
+                width: 30%;
+                margin-bottom: 2rem;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            .item-card img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 0.5rem;
+            }
+            
+            .item-card p {
+                margin: 0.5reml;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            
+            .item-card table {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            
+            .item-card td:first-child {
+                font-weight: bold;
+            }
+            
+            .item-card td:last-child {
+                text-align: right;
+                font-weight: bold;
+                color: #c00;
+            }
+        </style>
+
     </head>
 
     <!-- Website body -->
@@ -58,27 +106,54 @@
             </div>
         </nav>
 
-        <div>
-            <h1>Welcome to the Beauty section!</h1>
-            <p>Extra 10% OFF for the Easter!</p>
-        </div>
-    
-        <div>
-            <h2>Best Sellers</h2>
+        <div>                    
+            <p style="text-align:center;"><img src="../img/beauty.jpg" width="500" height="600"></p>
+            <p style="text-align:center;"><font size="+2">Best Sellers!</font></p>
         </div>
     
         <div>
             <h2>
                 All items
-                <form>
-                    <input type="search" id="search-box" name="search-box">
-                    <button type="submit">Search</button>
-                  </form>
             </h2>
+        </br>
+        </br>
         </div>
+        <div class="item-container">
+            <img src="../img/beauty1.png" width="200" height="280">
+            <p>CLEARLY CLEAN CLEANSING BALM</font></p>
+            <p>100ML</p>
+            <table>
+              <tr>
+                <td>Price:</td>
+                <td>€ 38,00</td>
+              </tr>
+            </table>
+
+            <img src="../img/beauty1.png" width="200" height="280">
+            <p>CLEARLY CLEAN CLEANSING BALM</font></p>
+            <p>100ML</p>
+            <table>
+              <tr>
+                <td>Price:</td>
+                <td>€ 38,00</td>
+              </tr>
+            </table>
+            <img src="../img/beauty1.png" width="200" height="280">
+            <p>CLEARLY CLEAN CLEANSING BALM</font></p>
+            <p>100ML</p>
+            <table>
+              <tr>
+                <td>Price:</td>
+                <td>€ 38,00</td>
+              </tr>
+            </table>
+             
+          </div>
         
-        <!-- Container to make button position responsive -->
+        
+        <!-- Footer -->
         <footer>
+            <p class="copyright">© Erick /Mengzhao /Somtochukwu 2023</p>
             <!-- Website javaScript -->
             <script src="../js/project.js"></script>
         </footer>
