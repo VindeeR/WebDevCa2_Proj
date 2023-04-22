@@ -59,6 +59,12 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
     wrap: true
 })
 
+const myCarouselElement2 = document.querySelector('#myCarousel2')
+const carousel2 = new bootstrap.Carousel(myCarouselElement2, {
+    interval: 5000,
+    wrap: true
+})
+
 // make the form shake 
 const form = document.getElementById('contact-form');
 
