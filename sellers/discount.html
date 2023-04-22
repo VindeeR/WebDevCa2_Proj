@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="../css/project.css">
     
         <title>Assessment</title>
+		<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4ae9c751-a8bc-47ff-9221-54b986e2a5c9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     
     </head>
 
@@ -60,36 +61,150 @@
         </nav>
 
 		<!-- Main content of the page -->
-		<h1>Discounts and Promotions</h1>
-		<p>Welcome to our pharmacy store's discounts and promotions page! We offer a variety of discounts and promotions for our customers to take advantage of. Check out our current promotions below.</p>
-		<h2>Current Promotions</h2>
-		<ul>
-			<li>10% off your first purchase: Use the code WELCOME10 at checkout to receive 10% off your first purchase.</li>
-			<li>Free shipping on orders over $50.</li>
-			<li>Buy one, get one 50% off on select vitamins and supplements: Stock up on your favorite vitamins and supplements while saving money!</li>
-			<li>Senior Citizen Discount: Senior citizens receive a 15% discount on all purchases.</li>
-		</ul>
+        <div class="container mt-5">
+            <h1>Discounts and Promotions</h1>
+            <p>Welcome to our pharmacy store's discounts and promotions page! We offer a variety of discounts and promotions for our customers to take advantage of. Check out our current promotions below.</p>
+            <h2>Current Promotions</h2>
+            <ul>
+                <li>10% off your first purchase:</li>
+                <li>Free shipping on orders over €50.</li>
+                <li>Buy one, get one 50% off on select vitamins and supplements: Stock up on your favorite vitamins and supplements while saving money!</li>
+                <li>Senior Citizen Discount: Senior citizens receive a 15% discount on all purchases.</li>
+            </ul>
+            
+            <!-- Discounted Products -->
+            <div class="product">
+                <img src="../img/drug1.jpg" alt="[Product name]">
+                <h2>[Product name]</h2>
+                <p>[Product description]</p>
+                <p><strong>Price:</strong> [Product price]</p>
+                <p><strong>Discounted price:</strong> [Discounted price]</p>
+            </div>
+            
+            <!-- Wow factor -->
+            <div class="wow">
+                <img src="../img/star.png" alt="Star">
+                <p>Don't miss out on our limited-time offer!</p>
+            </div>
+            
+            <!-- Countdown timer ID -->
+            <div class="countdown-container mb-4">
+                <span id="countdown" class="countdown"></span>
+            </div>
+            
+            <!-- Carousel -->
+            <div id="myCarousel" class="carousel slide carousel-inner mb-4" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div>
+                    <div class="carousel-item active mb-4">
+                        <img src="../img/drug1.jpg" class="d-block w-100 tiles carousel-img" alt="../img/drug1.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Codral (Day & Night)</p>
+                    </div>
+                </div>
+                <div class="carousel-item mb-4">
+                    <img src="../img/drug2.jpg" class="d-block w-100 tiles carousel-img" alt="../img/drug2.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Tylenol</p>
+                    </div>
+					</div>
+                    
+                    <div class="carousel-item mb-4">
+                        <img src="../img/drug5.jpg" class="d-block w-100 tiles carousel-img" alt="../img/drug5.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Meclizine</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-		<!-- Wow factor -->
-		<div class="wow">
-			<img src="../img/star.png" alt="Star">
-			<p>Don't miss out on our limited-time offer!</p>
-			<button>Shop now</button>
-		</div>
+            <!-- Number of customers who have benefited from the discount program -->
+            <div class="mb-4">
+                <span>Join the</span>
+                <span style="font-weight: bold;">Easter-Pharma Discount Program</span>
+                <span>today! Over</span>
+                <span style="font-weight: bold;">69</span>
+                <span>customers have already saved money!</span>
+            </div>
+            
+            <!-- Newsletter sign-up form -->
+            <p>Sign up for our newsletter to receive exclusive offers straight to your inbox.</p>
+            <form class="mb-5">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign up</button>
+            </form>
 
-		<!-- Newsletter sign-up form -->
-		<p>Sign up for our newsletter to receive exclusive offers straight to your inbox.</p>
-		<form>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-			<button type="submit">Sign up</button>
-		</form>
-        
+            <!-- social-media-links -->
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/yourpharmacy/" target="_blank">
+                    <img src="facebook-icon.png" class="icon">
+                    <style>
+                        .icon {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    </style>
+                </a>
+                <a href="https://twitter.com/yourpharmacy/" target="_blank">
+                    <img src="twitter-icon.png" class="icon">
+                </a>
+                <a href="https://www.instagram.com/yourpharmacy/" target="_blank">
+                    <img src="instagram-icon.png" class="icon">
+                </a>
+            </div> 
+        </div>
+
+		
         <!-- Footer -->
         <footer>
             <p class="copyright">© Erick /Mengzhao /Somtochukwu 2023</p>
             <!-- Website javaScript -->
             <script src="./js/project.js"></script>
         </footer>
+		
+		
+		<!-- javaScript for Countdown timer -->
+		<script>
+// Set the date and time of the discount expiry in milliseconds
+var expiryDate = new Date("2023-05-01T00:00:00Z").getTime();
+
+// Update the countdown timer every second
+var countdown = setInterval(function() {
+  // Get the current date and time in milliseconds
+  var now = new Date().getTime();
+  
+  // Calculate the time remaining in milliseconds
+  var remaining = expiryDate - now;
+  
+  // Calculate the days, hours, minutes, and seconds remaining
+  var days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+  
+  // Display the countdown timer
+  document.getElementById("countdown").innerHTML = "Discount expires in " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds.";
+  
+  // If the countdown timer has expired, clear the interval and display a message
+  if (remaining < 0) {
+    clearInterval(countdown);
+    document.getElementById("countdown").innerHTML = "Sorry, this discount has expired.";
+  }
+}, 1000); // Repeat every second
+</script>
+
 	</body>
 </head>
