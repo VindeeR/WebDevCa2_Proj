@@ -25,6 +25,11 @@ a {
     background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
 }
 
+/* Remove bullet points */
+menu {
+    list-style: none;
+}
+
 /* Mask and Popup */
 #mask, #mask2, #mask3 {
     position: fixed;
@@ -51,14 +56,6 @@ a {
     z-index: 10001;
     display: none;
     box-shadow: 10px 10px 5px #b3b3b3;
-}
- 
-/* Navigation Header */
-#navHeader,
-#present,
-#past,
-#future {
-  background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
 }
 
 /* Footer */
@@ -212,8 +209,4 @@ input:focus, textarea:focus {
   font-size: 24px;
   font-weight: bold;
   color: #333;
-}
-
-menu {
-    list-style: none;
 }
