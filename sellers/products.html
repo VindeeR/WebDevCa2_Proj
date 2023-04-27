@@ -5,7 +5,7 @@
     //           12/04/2023             //
     ///////////////////////////////////-->
     
-    <!DOCTYPE HTML5>
+    <!DOCTYPE html>
     <html lang="en"> <!-- HTML5 opening HTML tag with language. -->
         <!-- Website header -->
         <head>
@@ -23,46 +23,6 @@
             <link rel="stylesheet" href="../css/project.css">
         
             <title>Assessment</title>
-    
-            <style>
-                section {
-                margin-bottom: 40px;
-            }
-            
-            h2 {
-                margin-bottom: 20px;
-            }
-            
-            p {
-                margin-bottom: 10px;
-            }
-            
-            ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-    
-            #beauty-products li,
-        #drug-products li {
-            border-bottom: 1px solid #ddd;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        #beauty-products li:last-child,
-        #drug-products li:last-child {
-            border-bottom: none;
-        }
-    
-        #beauty-products li:hover,
-        #drug-products li:hover {
-            background-color: #f7f7f7;
-        }
-            
-            </style>
     
         </head>
     
@@ -83,16 +43,17 @@
                 <div class="container-fluid">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Products
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./products.html">All</a></li>
-                                <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
-                                <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
-                            </ul>
-                        </li>
+                        <menu>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./products.html">All</a></li>
+                                    <li><a class="dropdown-item" href="./beauty.html">Beauty</a></li>
+                                    <li><a class="dropdown-item" href="./fever.html">Fever/Cold</a></li>
+                                </ul>
+                            </li>
+                        </menu>
                         <a class="nav-link" href="./discount.html">Discounts</a>
                         <a class="nav-link" href="../contact/contact.html" tabindex="-1">Contact us</a>
                     </div>
@@ -128,7 +89,12 @@
                         </div>
                         <div class="carousel-item mt-5 mb-5 p-1 text-center">
                             <div class="mt-5 mb-5 p-2">
-                                <button class = "btn btn-light mt-5 mb-5 p-2" ><a class="nav-link" href="./beauty.html">BUY NOW</a></button>
+                                <form action = "./beauty.html">
+                                    <button class = "btn btn-light mt-5 mb-5 p-2">
+                                        BUY NOW
+                                    </button>
+                                </form>
+                                <!-- <button class = "btn btn-light mt-5 mb-5 p-2" ><a class="nav-link" href="./beauty.html">BUY NOW</a></button> -->
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
@@ -177,11 +143,15 @@
                         </div>
                         <div class="carousel-item mt-5 mb-5 p-1 text-center">
                             <div class="mt-5 mb-5 p-2">
-                                <button class = "btn btn-light mt-5 mb-5 p-2" ><a class="nav-link" href="./fever.html">BUY NOW</a></button>
-                                <div class="carousel-caption d-none d-md-block">
+                                <form action = "./fever.html">
+                                    <button class = "btn btn-light mt-5 mb-5 p-2">
+                                        BUY NOW
+                                    </button>
+                                </form>
+                                <!-- <button class = "btn btn-light mt-5 mb-5 p-2" ><a class="nav-link" href="./fever.html">BUY NOW</a></button> -->
+                                <div class="carousel-caption d-none d-md-block"></div>
                             </div>
                         </div>
-    
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
